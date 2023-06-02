@@ -5,4 +5,26 @@ using namespace std;
 class solution{
 public:
 
-int binarySearch(int arr[],int start,int mid,int end){
+int binarySearch(vector<int>&arr,int start,int k,int end){
+int n=arr.size();
+start=arr[0];
+end=arr[n];
+int mid=start+ end-start/2;
+while(!arr.empty()){
+if(k==mid)
+return mid;
+
+
+else if(arr[i]<=k){
+start=mid;
+}
+else{
+end=mid;
+}
+}
+
+return mid;
+
+
+int main(){
+
