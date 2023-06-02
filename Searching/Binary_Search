@@ -1,1 +1,8 @@
 C++
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+class solution{
+public:
+
+int binarySearch(int arr[],int start,int mid,int end){
